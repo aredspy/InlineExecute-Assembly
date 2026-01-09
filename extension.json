@@ -1,6 +1,6 @@
 {
     "name": "InlineExecute-Assembly",
-    "version": "0.0.1",
+    "version": "0.0.0",
     "command_name": "inline-execute-assembly",
     "extension_author": "c2biz",
     "original_author": "anthemtotheego",
