@@ -1,7 +1,7 @@
 {
-    "name": "InlineExecute-Assembly",
-    "version": "0.0.0",
-    "command_name": "inline-execute-assembly",
+    "name": "InlineExecute-Assembly-Mod",
+    "version": "0.0.1",
+    "command_name": "inline-execute-assembly-mod",
     "extension_author": "c2biz",
     "original_author": "anthemtotheego",
     "repo_url": "https://github.com/sliverarmory/InlineExecute-Assembly",
@@ -17,6 +17,62 @@
       }
     ],
     "arguments": [
+      {
+        "name": "appdomain",
+        "desc": "Change default name of AppDomain sent (default value is totesLegit) *Domain always unloaded*",
+        "type": "string",
+        "optional": true,
+        "default": "totesLegit"
+      },
+      {
+        "name": "amsi",
+        "desc": "Attempts to disable AMSI via in memory patching (If successful AMSI will be disabled for the entire life of process)",
+        "type": "int",
+        "optional": true,
+        "default": 0
+      },
+            {
+        "name": "etw",
+        "desc": "Attempts to disable ETW via in memory patching (If successful ETW will be disabled for the entire life of process unless reverted)",
+        "type": "int",
+        "optional": true,
+        "default": 0
+      },
+            {
+        "name": "revertetw",
+        "desc": "Attempts to disable ETW via in memory patching and then repatches it back to original state",
+        "type": "int",
+        "optional": true,
+        "default": 0
+      },
+      {
+        "name": "mailslot",
+        "desc": "Switches to using mailslots to redirect console output",
+        "type": "int",
+        "optional": true,
+        "default": 0
+      },
+      {
+        "name": "main",
+        "desc": "Changes entry point to Main() (default value is Main(string[] args)), change to 0 for Main()",
+        "type": "int",
+        "optional": true,
+        "default": 1
+      },
+      {
+        "name": "slotname",
+        "desc": "Changes default name of mailslot (default value is totesLegit), only used if mailslot flag is set to 1",
+        "type": "string",
+        "optional": true,
+        "default": "totesLegit" 
+      },
+      {
+        "name": "pipe",
+        "desc": "Change default name of named pipe (default value is totesLegit)",
+        "type": "string",
+        "optional": true,
+        "default": "totesLegit"
+      },
       {
         "name": "dotnetassembly",
         "desc": "Directory path to your assembly",

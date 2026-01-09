@@ -339,14 +339,14 @@ void go(char* args, int length) {//Executes .NET assembly in memory
 	size_t assemblyByteLen = 0;
 	
 	//Extract data sent
-	/*appDomain = BeaconDataExtract(&parser, NULL);
+	appDomain = BeaconDataExtract(&parser, NULL);
 	amsi = BeaconDataInt(&parser);
 	etw = BeaconDataInt(&parser);
 	revertETW = BeaconDataInt(&parser);
 	mailSlot = BeaconDataInt(&parser);
 	entryPoint = BeaconDataInt(&parser);
 	slotName = BeaconDataExtract(&parser, NULL);
-	pipeName = BeaconDataExtract(&parser, NULL);*/
+	pipeName = BeaconDataExtract(&parser, NULL);
 	assemblyByteLen = BeaconDataLength(&parser);
 	char* assemblyBytes = BeaconDataExtract(&parser, NULL);
 	BeaconPrintf(CALLBACK_OUTPUT, "[+] Success - Wrote %d bytes to memory\n", assemblyByteLen); // Debug Only
