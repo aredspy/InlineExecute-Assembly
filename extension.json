@@ -1,7 +1,7 @@
 {
-    "name": "InlineExecute-Assembly-Mod",
+    "name": "InlineExecute-Assembly",
     "version": "0.0.1",
-    "command_name": "inline-execute-assembly-mod",
+    "command_name": "inline-execute-assembly",
     "extension_author": "c2biz",
     "original_author": "anthemtotheego",
     "repo_url": "https://github.com/sliverarmory/InlineExecute-Assembly",
